@@ -29,7 +29,7 @@
 
         <source-file src="src/ios/CDVZeroConf.mm"/>
     </platform>
-    
+
     <platform name="android">
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
@@ -46,6 +46,8 @@
         </config-file>
 
         <framework src="javax.jmdns:jmdns:+"/>
+        <framework src="javax.jmdns:jmdns:+"/>
+        <source-file src="src/android/libs/org.apache.http.legacy.jar" target-dir="libs" framework="true" />
 
         <source-file src="src/android/ZeroConf.java" target-dir="src/com/triggertrap" />
 
